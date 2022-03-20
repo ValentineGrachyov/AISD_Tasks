@@ -10,8 +10,24 @@ namespace _1Algoritm_Semestry
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("asdasda");
-            Console.Write("asdafaf");
+            // Create a graph given
+            // in the above diagram
+            Graph g = new Graph(6);
+            g.AddEdge(5, 2);
+            g.AddEdge(5, 0);
+            g.AddEdge(4, 0);
+            g.AddEdge(4, 1);
+            g.AddEdge(2, 3);
+            g.AddEdge(3, 1);
+
+            Console.WriteLine("Following is a Topological "
+                              + "sort of the given graph");
+
+            // Function Call
+            g.TopologicalSort();
+
+            Console.ReadLine();
+
 
         }
     }

@@ -1,0 +1,7 @@
+C:\Программирование\AISD_Tasks\1Algoritm Semestry\bin\Debug\1Algoritm Semestry.exe.config
+C:\Программирование\AISD_Tasks\1Algoritm Semestry\bin\Debug\1Algoritm Semestry.exe
+C:\Программирование\AISD_Tasks\1Algoritm Semestry\bin\Debug\1Algoritm Semestry.pdb
+C:\Программирование\AISD_Tasks\1Algoritm Semestry\obj\Debug\1Algoritm Semestry.csproj.AssemblyReference.cache
+C:\Программирование\AISD_Tasks\1Algoritm Semestry\obj\Debug\1Algoritm Semestry.csproj.CoreCompileInputs.cache
+C:\Программирование\AISD_Tasks\1Algoritm Semestry\obj\Debug\1Algoritm Semestry.exe
+C:\Программирование\AISD_Tasks\1Algoritm Semestry\obj\Debug\1Algoritm Semestry.pdb

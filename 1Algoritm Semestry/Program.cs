@@ -1,34 +1,38 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace _1Algoritm_Semestry
 {
     class Program
     {
         static void Main(string[] args)
-        {
-            // Create a graph given
-            // in the above diagram
-            Graph g = new Graph(6);
-            g.AddEdge(5, 2);
-            g.AddEdge(5, 0);
-            g.AddEdge(4, 0);
-            g.AddEdge(4, 1);
-            g.AddEdge(2, 3);
-            g.AddEdge(3, 1);
+        {            
+            Graph g = new Graph(10_000);
+
+                File.ReadAllLines(@"C:\Программирование\AISD_Tasks\1Algoritm Semestry\Graph.txt")
+                    .Select(x => Array.ConvertAll(x.Split(','), int.Parse))
+                    .ToList()
+                    .ForEach(x => g.AddEdge(x[0], x[1]));        
 
             Console.WriteLine("Following is a Topological "
                               + "sort of the given graph");
 
+            Stopwatch stopwatch = new Stopwatch();
+
+            stopwatch.Start();
+
             // Function Call
             g.TopologicalSort();
 
+            stopwatch.Stop();
+
+            Console.WriteLine($"\n{stopwatch.ElapsedMilliseconds}");
             Console.ReadLine();
-
-
         }
     }
 }

@@ -1,0 +1,8 @@
+C:\Программирование\AISD_Tasks\ConsoleApp2\obj\Debug\2Semestry.csproj.AssemblyReference.cache
+C:\Программирование\AISD_Tasks\ConsoleApp2\obj\Debug\2Semestry.csproj.SuggestedBindingRedirects.cache
+C:\Программирование\AISD_Tasks\ConsoleApp2\obj\Debug\2Semestry.csproj.CoreCompileInputs.cache
+C:\Программирование\AISD_Tasks\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Программирование\AISD_Tasks\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
+C:\Программирование\AISD_Tasks\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Программирование\AISD_Tasks\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Программирование\AISD_Tasks\ConsoleApp2\bin\Debug\ConsoleApp2.pdb

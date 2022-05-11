@@ -5,7 +5,27 @@
       "ProjectGuid": "9a24e2e3-fa82-48ba-8c77-ae61b63e756d",
       "DisplayName": "1Algoritm Semestry",
       "ColorIndex": 0
+    },
+    "25466cc6-3066-4586-91da-5e64ebd8568c": {
+      "ProjectGuid": "25466cc6-3066-4586-91da-5e64ebd8568c",
+      "DisplayName": "ConsoleApp1",
+      "ColorIndex": 1
+    },
+    "deed24e8-284b-4065-8d93-867718303141": {
+      "ProjectGuid": "deed24e8-284b-4065-8d93-867718303141",
+      "DisplayName": "2Semestry",
+      "ColorIndex": 2
+    },
+    "2cdb7340-18e4-4104-aca1-2c176eea6cf9": {
+      "ProjectGuid": "2cdb7340-18e4-4104-aca1-2c176eea6cf9",
+      "DisplayName": "UnitTestProject1",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }

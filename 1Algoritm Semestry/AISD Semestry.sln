@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1Algoritm Semestry", "1Algoritm Semestry.csproj", "{9A24E2E3-FA82-48BA-8C77-AE61B63E756D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "..\ConsoleApp2\ConsoleApp2.csproj", "{DEED24E8-284B-4065-8D93-867718303141}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2Semestry", "..\ConsoleApp2\2Semestry.csproj", "{DEED24E8-284B-4065-8D93-867718303141}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "..\UnitTestProject1\UnitTestProject1.csproj", "{2CDB7340-18E4-4104-ACA1-2C176EEA6CF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DEED24E8-284B-4065-8D93-867718303141}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEED24E8-284B-4065-8D93-867718303141}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEED24E8-284B-4065-8D93-867718303141}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CDB7340-18E4-4104-ACA1-2C176EEA6CF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CDB7340-18E4-4104-ACA1-2C176EEA6CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CDB7340-18E4-4104-ACA1-2C176EEA6CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CDB7340-18E4-4104-ACA1-2C176EEA6CF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

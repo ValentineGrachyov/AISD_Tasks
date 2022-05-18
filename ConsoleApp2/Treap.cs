@@ -26,74 +26,51 @@ namespace ConsoleApp2
         
 
 
-        //Методы
+        /// <summary>
+        /// Методы для работы с структурой.
+        /// </summary>
+        /// <param name="L"></param>
+        /// <param name="R"></param>
+        /// <returns></returns>
+        
+        // Метод позволяющий объединять два декартовых дерева.
         public Treap Merge(Treap L, Treap R)
         {
-            if(L == null)
-                return R;
-
-            if(R == null)
-                return L;
-
-            if(L.y < R.y)
-            {
-                var newR = Merge(L.RightChild, R);
-                return new Treap(L.x,L.y,L.LeftChild,newR);
-            }
-            else
-            {
-                var newL = Merge(L, R.LeftChild);
-                return new Treap(R.x,R.y,newL,R.RightChild);
-            }
-
-
+            
         }
 
-        public void Split(int x, out Treap L, out Treap R)
+        // Метод для разделения дерева по ключу.
+        public void Split(int x, Treap tree)
         {
-            Treap newTree = null;
-            if (this.x <= x)
-            {
-                if (RightChild == null)
-                    R = null;
-                else
-                    RightChild.Split(x, out newTree, out R);
-                L = new Treap(this.x, y, LeftChild, newTree);
-            }
-            else
-            {
-                if (LeftChild == null)
-                    L = null;
-                else
-                    LeftChild.Split(x, out L, out newTree);
-                R = new Treap(this.x, y, newTree, RightChild);
-            }
+                        
         }
 
-        public Treap Add(int x)
+        public Treap Add(int x, int y, Treap treap)
         {
-            Treap l, r;
-            Split(x, out l, out r);
-            return Merge(Merge(l,r),r);
+            var lCopy = treap.LeftChild;
+            var RCopy = treap.RightChild;
+            var a = new Treap(x, y);
+            Split(x, out treap.LeftChild, out treap.RightChild);
+            return Merge(Merge(treap.LeftChild, a), treap.RightChild);
         }
 
         public Treap Remove(int x)
         {
             Treap l, m, r;
-            Split(x - 1,out l,out r);
-            r.Split(x - 1,out m,out r);
+            Split(x ,out l,out r);
+            r.Split(x + 1,out m,out r);
             return Merge(l, r);
         }
 
-        public void Print(Treap treap)
+        // Обход дерева по упорядочиванию вершин.
+        public void PrintTree(Treap treap)
         {
           if (treap != null)
           {
-                Print(treap.LeftChild);
-                Console.WriteLine(treap.x);
-                Print(treap.RightChild);
+                PrintTree(treap.LeftChild);
+                Console.Write($"{treap.x} => ");
+                PrintTree(treap.RightChild);
           }
-
         }
     }
 }

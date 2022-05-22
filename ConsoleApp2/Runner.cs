@@ -10,15 +10,14 @@ namespace ConsoleApp2
     {
         public static void Run()
         {
-            var a = new Treap(7, 10,
-                new Treap(4, 6,new Treap(2, 4, new Treap(0, 3,null,null), new Treap(3, 3, null, null)), new Treap(6, 2, new Treap(5, 1, null, null), null)),
-                new Treap(13, 8, new Treap(9, 7, null, new Treap(11, 3, null, null)), new Treap(14, 4, null, null)));
-
-            //a.Split(7,out a.LeftChild,out a.RightChild);
-
-            a.Add(3,1, a);
-            //a.Remove(4);
-            a.PrintTree(a);
+            Treap L = null;
+            Treap R = null;
+            var test = new TreapMethods();
+            var a = new Treap(4, 4, new Treap(3, 2), new Treap(7, 1));
+            var b = new Treap(2, 8, new Treap(1, 7), new Treap(6, 5));
+            var c =  test.Merge(a, b);            
+            c = test.Add(c, 8, 1);            
+            test.PrintTree(c);
             Console.ReadLine();
         }
     }
